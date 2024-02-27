@@ -17,12 +17,16 @@
 <body>
     <div class="main-container">
         <header>
-            <div>
+            <div class="logo-header">
                 <img class="logo" src=".//images/logo/Booki.png" alt="Logo Booki">
             </div>
             <nav> <!-- Manque barre top sur CSS -->
+                <a href="#hebergements">
                     <button>Hébergements</button>
+                </a>
+                <a href="#activites">
                     <button>Activités</button>
+                </a>
             </nav>
         </header>
         <main>
@@ -33,17 +37,27 @@
                 </div>
                 <div class="search-bar">
                     <form action="">
+                        <label for="lieu">
                         <div class="logo-loc"><i class="fa-solid fa-location-dot"></i></div>
-                        <input type="text" id="Lieu" value="Marseille, France"/>
-                        <button type="submit"><div class="text-button">Rechercher</div></button>
+                        </label>
+                        <input type="text" id="lieu" value="Marseille, France"/>
+                        <button type="submit"><div class="text-button"><span>Rechercher</span></div></button>
                     </form>
                 </div>
                 <div class="filterbar">
-                    <h2>Filtres</h2>
-                    <button id="economique"><div class="logo-filter"><i class="fa-solid fa-money-bill-wave"></i></div> <h2>Économique</h2></button>
-                    <button id="familial"><div class="logo-filter"><i class="fa-solid fa-person"></i></div> <h2>Familial</h2></button>
-                    <button id="romantique"><div class="logo-filter"><i class="fa-solid fa-heart"></i></div> <h2>Romantique</h2></button>
-                    <button id="pepites"><div class="logo-filter"><i class="fa-solid fa-fire"></i></div> <h2>Nos pépites</h2></button>
+                    <div class="filter-title">
+                        <h2>Filtres</h2>
+                    </div>
+                    <div class="filter-button">
+                        <div class="container1">
+                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-money-bill-wave"></i></div> <h2 class="text-filter">Économique</h2></button>
+                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-person"></i></div> <h2 class="text-filter">Familial</h2></button>
+                        </div>
+                        <div class="container2">
+                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-heart"></i></div> <h2 class="text-filter">Romantique</h2></button>
+                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-fire"></i></div> <h2 class="text-filter">Nos pépites</h2></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="infobar">
                     <div><i class="fa-solid fa-info"></i></div>
@@ -51,11 +65,12 @@
                 </div>
             </section>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cards">
+                        <div class="list">
                         <a href=""">  <!-- Hôtel du port -->
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant deux lits">
@@ -113,6 +128,8 @@
                                 </div>
                             </article>
                         </a>
+                        </div>
+                        <div class="list">
                         <a href=""">  <!-- Hôtel de la mer -->
                             <article class="card">
                                 <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit avec un cadre au dessus">
@@ -170,8 +187,9 @@
                                 </div>
                             </article>
                         </a>
+                        </div>
                     </div>
-                    <div>
+                    <div class="more">
                         <a href="#">
                             <h3>Afficher plus</h3>
                         </a>
@@ -243,8 +261,58 @@
                     </div>
                 </section>
             </div>
+            <div class="activite" id="activites">
+                <div class="activite-title">
+                    <h2>Activités à Marseille</h2>
+                </div>
+                <div class="activite-cards">
+                    <a href="#">
+                        <article class="card">
+                                <img src=".//images/activites/reno-laithienne.jpg" alt="Photo d'un port">
+                                <h3>Vieux-Port</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                                <img src=".//images/activites/paul-hermann.jpg" alt="Photo d'un fort">
+                                <h3>Fort de Pomègues</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                                <img src=".//images/activites/kilyan-sockalingum.jpg" alt="Photo d'un paysage étant un parc national">
+                                <h3>Parc national des Calanques</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                                <img src=".//images/activites/florian-wehde.jpg" alt="Photo d'un monument qui surplombe la ville">
+                                <h3>Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
+            </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footer-container">
+                <section class="infos">
+                    <H3>À propos</H3>
+                    <a href="#">Fonctionnement du site</a>
+                    <a href="#">Conditions générales</a>
+                    <a href="#">Données et confidentialité</a>
+                </section>
+                <section class="hebergements">
+                    <H3>Nos hébergements</H3>
+                    <a href="#">Charte qualité</a>
+                    <a href="#">Proposer votre hôtel</a>
+                </section>
+                <section class="help">
+                    <H3>Assistance</H3>
+                    <a href="#">Centre d'aide</a>
+                    <a href="#">Nous contacter</a>
+                </section>
+            </div>
+        </footer>
     </div>
 </body>
 
