@@ -16,8 +16,8 @@
 
 <body>
     <div class="main-container">
-        <header>
-            <div class="logo-header">
+        <header>  <!-- Ajout logo Booki et les boutons hébergements et activités -->
+            <div class="logo-header">  
                 <img class="logo" src="images/logo/Booki.png" alt="Logo Booki">
             </div>
             <nav> <!-- Manque barre top sur CSS -->
@@ -30,21 +30,21 @@
             </nav>
         </header>
         <main>
-            <section class="info">
-                <div class="headline">
+            <section class="info"> <!-- Section d'informations -->
+                <div class="headline"> <!-- texte -->
                     <h2 class="section-title">Trouver votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
-                <div class="search-bar">
+                <div class="search-bar"> <!-- Barre de recherche -->
                     <form action="">
                         <label for="lieu">
-                        <div class="logo-loc"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="logo-loc"><i class="fa-solid fa-location-dot"></i></div> <!-- Logo position -->
                         </label>
-                        <input type="text" id="lieu" value="Marseille, France"/>
-                        <button type="submit"><div class="text-button"><span>Rechercher</span></div></button>
+                        <input type="text" id="lieu" value="Marseille, France"/> <!-- Texte -->
+                        <button type="submit"><div class="text-button"><span>Rechercher</span></div></button> <!-- Bouton de recherche -->
                     </form>
                 </div>
-                <div class="filterbar">
+                <div class="filterbar"> <!-- Ajout des filtres en 2 conteneurs pour le responsive mobile -->
                     <div class="filter-title">
                         <h2>Filtres</h2>
                     </div>
@@ -69,8 +69,8 @@
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
-                    <div class="hebergements-cards">
-                        <div class="list">
+                    <div class="hebergements-cards"> <!-- Ajout des hébergements en 2 listes de 3 hébergements -->
+                        <div class="list"> <!-- Liste numéro 1 -->
                         <a href=""">  <!-- Hôtel du port -->
                             <article class="card">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="Chambre hôtel du port">
@@ -129,10 +129,10 @@
                             </article>
                         </a>
                         </div>
-                        <div class="list">
+                        <div class="list"> <!-- Liste numéro 2 -->
                         <a href=""">  <!-- Hôtel de la mer -->
                             <article class="card">
-                                <img src="images/hebergements/annie-spratt.jpg" alt="Chambre hôyel de la mer">
+                                <img src="images/hebergements/annie-spratt.jpg" alt="Chambre hôtel de la mer">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -195,7 +195,7 @@
                         </a>
                     </div>
                 </section>
-                <section class="populaires">
+                <section class="populaires"> <!-- Liste d'hébergements populaires -->
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -261,7 +261,7 @@
                     </div>
                 </section>
             </div>
-            <div class="activite" id="activites">
+            <section class="activite" id="activites"> <!-- Ajout de la section activité -->
                 <div class="activite-title">
                     <h2>Activités à Marseille</h2>
                 </div>
@@ -291,27 +291,27 @@
                         </article>
                     </a>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
-            <div class="footer-container">
-                <section class="infos">
+            <section class="footer-container"> <!-- Ajout de la section footer en 3 divisions -->
+                <div class="infos">
                     <H3>À propos</H3>
                     <a href="#">Fonctionnement du site</a>
                     <a href="#">Conditions générales</a>
                     <a href="#">Données et confidentialité</a>
-                </section>
-                <section class="hebergements">
+                </div>
+                <div class="hebergements">
                     <H3>Nos hébergements</H3>
                     <a href="#">Charte qualité</a>
                     <a href="#">Proposer votre hôtel</a>
-                </section>
-                <section class="help">
+                </div>
+                <div class="help">
                     <H3>Assistance</H3>
                     <a href="#">Centre d'aide</a>
                     <a href="#">Nous contacter</a>
-                </section>
-            </div>
+                </div>
+            </section>
         </footer>
     </div>
 </body>
