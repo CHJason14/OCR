@@ -21,12 +21,12 @@
                 <img class="logo" src="images/logo/Booki.png" alt="Logo Booki">
             </div>
             <nav> <!-- Manque barre top sur CSS -->
-                <a href="#hebergements">
-                    <button>Hébergements</button>
-                </a>
-                <a href="#activites">
-                    <button>Activités</button>
-                </a>
+                <div>
+                    <button onclick="location.href='#hebergements'">Hébergements</button>
+                </div>
+                <div>
+                    <button onclick="location.href='#activites'">Activités</button>
+                </div>
             </nav>
         </header>
         <main>
@@ -36,12 +36,12 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <div class="search-bar"> <!-- Barre de recherche -->
-                    <form action="">
+                    <form action="#">
                         <label for="lieu">
-                        <div class="logo-loc"><i class="fa-solid fa-location-dot"></i></div> <!-- Logo position -->
+                        <span class="logo-loc"><i class="fa-solid fa-location-dot"></i></span> <!-- Logo position -->
                         </label>
                         <input type="text" id="lieu" value="Marseille, France"/> <!-- Texte -->
-                        <button type="submit"><div class="text-button"><span>Rechercher</span></div></button> <!-- Bouton de recherche -->
+                        <button type="submit"><span class="text-button"><span>Rechercher</span></span></button> <!-- Bouton de recherche -->
                     </form>
                 </div>
                 <div class="filterbar"> <!-- Ajout des filtres en 2 conteneurs pour le responsive mobile -->
@@ -50,12 +50,12 @@
                     </div>
                     <div class="filter-button">
                         <div class="container1">
-                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-money-bill-wave"></i></div> <h2 class="text-filter">Économique</h2></button>
-                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-person"></i></div> <h2 class="text-filter">Familial</h2></button>
+                            <button class="button-container"><span class="logo-filter"><i class="fa-solid fa-money-bill-wave"></i></span> <span class="text-filter">Économique</span></button>
+                            <button class="button-container"><span class="logo-filter"><i class="fa-solid fa-person"></i></span> <span class="text-filter">Familial</span></button>
                         </div>
                         <div class="container2">
-                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-heart"></i></div> <h2 class="text-filter">Romantique</h2></button>
-                            <button id="button-container"><div class="logo-filter"><i class="fa-solid fa-fire"></i></div> <h2 class="text-filter">Nos pépites</h2></button>
+                            <button class="button-container"><span class="logo-filter"><i class="fa-solid fa-heart"></i></span> <span class="text-filter">Romantique</span></button>
+                            <button class="button-container"><span class="logo-filter"><i class="fa-solid fa-fire"></i></span> <span class="text-filter">Nos pépites</span></button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="hebergements-cards"> <!-- Ajout des hébergements en 2 listes de 3 hébergements -->
                         <div class="list"> <!-- Liste numéro 1 -->
-                        <a href=""">  <!-- Hôtel du port -->
+                        <a href="#">  <!-- Hôtel du port -->
                             <article class="card">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="Chambre hôtel du port">
                                 <div class="card-content">
@@ -90,7 +90,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href=""">  <!-- Hôtel Chez Amina -->
+                        <a href="#">  <!-- Hôtel Chez Amina -->
                             <article class="card">
                                 <img src="images/hebergements/febrian-zakaria.jpg" alt="Chambre hôtel chez Amina">
                                 <div class="card-content">
@@ -109,7 +109,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href=""">  <!-- Hôtel Les Mouettes -->
+                        <a href="#">  <!-- Hôtel Les Mouettes -->
                             <article class="card">
                                 <img src="images/hebergements/reisetopia.jpg" alt="Chambre hôtel Les Mouettes">
                                 <div class="card-content">
@@ -130,7 +130,7 @@
                         </a>
                         </div>
                         <div class="list"> <!-- Liste numéro 2 -->
-                        <a href=""">  <!-- Hôtel de la mer -->
+                        <a href="#">  <!-- Hôtel de la mer -->
                             <article class="card">
                                 <img src="images/hebergements/annie-spratt.jpg" alt="Chambre hôtel de la mer">
                                 <div class="card-content">
@@ -149,7 +149,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href=""">  <!-- Auberge la canebière -->
+                        <a href="#">  <!-- Auberge la canebière -->
                             <article class="card">
                                 <img src="images/hebergements/marcus-loke.jpg" alt="Chambre auberge la canebière">
                                 <div class="card-content">
@@ -168,7 +168,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href=""">  <!-- Auberge le Panier -->
+                        <a href="#">  <!-- Auberge le Panier -->
                             <article class="card">
                                 <img src="images/hebergements/nicate-lee.jpg" alt="Chambre Auberge le Panier">
                                 <div class="card-content">
