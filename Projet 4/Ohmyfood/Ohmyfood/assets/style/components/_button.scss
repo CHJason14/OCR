@@ -1,0 +1,28 @@
+button {
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient($color2, $color1);
+    margin: 27px auto;
+
+    p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 13px 18.75px ;
+    }
+}
+
+.new-button {
+    position: absolute;
+    right: 20px;
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    background: $color3;
+    box-shadow: 0 2px 4px 0 #00000026;
+    font-size: 14px;
+    font-weight: 500;
+    color: #008766;
+    margin: 15px 0;
+}
