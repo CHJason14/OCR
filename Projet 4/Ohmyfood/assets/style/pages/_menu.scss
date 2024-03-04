@@ -1,0 +1,226 @@
+.img-top-menu {
+    width: 100%;
+    height: 275px;
+    padding: 0;
+
+    img {
+        object-fit: cover;
+        z-index: -1;
+        width: 100%;
+        height: 275px;
+    }
+}
+
+.menu-container {
+    position: relative;
+    top: -32px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding-bottom: 0;
+
+    .title-menu {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            margin: 0;
+            font-family: $fonttitle;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            margin-right: 30px;
+        }
+
+        i {
+            font-size: 22px;
+        }
+    
+        svg {
+            position: relative;
+            left: -22px;
+            top: -2px;
+            opacity: 0;
+            width: 23px;
+            fill: url(#gradient-svg);
+        }  
+
+    }
+    
+    svg:hover{
+        animation: apparaitre 1s;
+        animation-fill-mode: forwards;
+        }
+
+    .menu-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 300;
+            margin: 0;
+        }
+
+        .trait-dessous {
+            border-top: 3px solid #99E2D0;
+            width: 40px;
+            margin: 5px 0;
+        }
+
+        .menu-plat {
+            display: flex;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
+            padding-left: 15px;
+            margin-top: 12px;
+
+            .menu-name {
+                display: flex;
+                flex-direction: column;
+                padding: 12px 0;
+                width: 80%;
+
+                h3 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+    
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            .price {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                padding: 12px 0;
+                width: 20%;
+
+                p {
+                font-size: 15px;
+                font-weight: 700;
+                margin: 0 13px;
+                }
+            }
+
+            .select-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: -60px;
+                visibility: hidden;
+                width: 0px;
+                background-color: #99E2D0;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+                i {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.title-menu i:hover {
+    animation: like 1s;
+    animation-fill-mode: forwards;
+}
+
+.menu-plat:hover {
+    .select-button {
+        animation: move 1s;
+        animation-fill-mode: forwards;
+        transform: translateX(-60px);
+        transition: ease-out 1s;
+    }
+
+    .price {
+        animation: width2 1s;
+        animation-fill-mode: forwards;
+        transform: translateX(-60px);
+        transition: ease-out 1s;
+    }
+
+    .menu-name {
+        animation: width1 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+.valid {
+
+    display: flex;
+    justify-content: center;
+
+    input {
+        width: 186px;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@keyframes move 
+{
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to
+    {
+        opacity: 1;
+        width: 60px;
+        visibility: visible;
+    }
+}
+
+@keyframes width1
+{
+    from {
+        width: 80%;
+    }
+    to
+    {
+        width: 60%;
+    }
+}
+
+@keyframes width2
+{
+    from {
+        width: 20%;
+    }
+    to
+    {
+        width: 40%;
+    }
+}
+
+@keyframes apparaitre
+{
+    from {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
