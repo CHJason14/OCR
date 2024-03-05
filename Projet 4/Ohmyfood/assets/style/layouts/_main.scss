@@ -52,6 +52,12 @@ section {
         flex-direction: column;
         align-items: center;
 
+        .list-card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
         a {
 
             display: flex;
@@ -108,19 +114,94 @@ section {
                         font-size: 22px;
                         cursor: pointer;
                     }
+
+                    i {
+                        font-size: 22px;
+                    }
+                
+                    svg {
+                        position: relative;
+                        left: -26px;
+                        top: 3px;
+                        opacity: 0;
+                        width: 23px;
+                        fill: url(#gradient-svg);
+                    } 
                 }
             }
         }
     }
 }
 
-.card-like span::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f004";
-    transition: ease-in 1s;
-}
+svg:hover{
+    animation: apparaitre 1s;
+    animation-fill-mode: forwards;
+    }
 
-.card-like span:hover {
-    color: $color1;
-    font-weight: 900;
-}
+@keyframes apparaitre
+    {
+        from {
+            opacity: 0;
+        }
+        to
+        {
+            opacity: 1;
+        }
+    }
+
+    @media (min-width: 767.98px) {
+        
+        .instruction {
+            .step-container {
+            flex-direction: row;
+            justify-content: space-between;
+
+            h3 {
+                margin-right: 15px;
+            }
+            }
+        }
+
+        .restaurant-container .restaurants-cards {
+            .list-card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+
+                a{
+                    width: 50%;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 1280px) {
+
+        .instruction {
+            
+            h2 {
+                max-width: 1265px;
+            margin: 10px auto;
+            }
+
+            .step-container {
+            max-width: 1265px;
+            margin: 0 auto;
+            }
+        }
+
+        .restaurant-container {
+
+            h2 {
+                max-width: 1265px;
+                margin: 10px auto;
+            }
+
+            .restaurants-cards {
+                max-width: 1265px;
+                margin: 0 auto;
+            }
+        }
+    }

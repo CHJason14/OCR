@@ -34,7 +34,7 @@ nav p {
   font-weight: 300;
   font-size: 18px;
   color: #353535;
-  margin: 0;
+  margin: 0 10px;
 }
 nav .localisation {
   display: -webkit-box;
@@ -134,6 +134,16 @@ section h2 {
       -ms-flex-align: center;
           align-items: center;
 }
+.restaurant-container .restaurants-cards .list-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
 .restaurant-container .restaurants-cards a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,19 +208,90 @@ section h2 {
   font-size: 22px;
   cursor: pointer;
 }
-
-.card-like span::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f004";
-  -webkit-transition: ease-in 1s;
-  transition: ease-in 1s;
+.restaurant-container .restaurants-cards a .card .card-content i {
+  font-size: 22px;
+}
+.restaurant-container .restaurants-cards a .card .card-content svg {
+  position: relative;
+  left: -26px;
+  top: 3px;
+  opacity: 0;
+  width: 23px;
+  fill: url(#gradient-svg);
 }
 
-.card-like span:hover {
-  color: #9356DC;
-  font-weight: 900;
+svg:hover {
+  -webkit-animation: apparaitre 1s;
+          animation: apparaitre 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes apparaitre {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparaitre {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 767.98px) {
+  .instruction .step-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .instruction .step-container h3 {
+    margin-right: 15px;
+  }
+  .restaurant-container .restaurants-cards .list-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .restaurant-container .restaurants-cards .list-card a {
+    width: 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .instruction h2 {
+    max-width: 1265px;
+    margin: 10px auto;
+  }
+  .instruction .step-container {
+    max-width: 1265px;
+    margin: 0 auto;
+  }
+  .restaurant-container h2 {
+    max-width: 1265px;
+    margin: 10px auto;
+  }
+  .restaurant-container .restaurants-cards {
+    max-width: 1265px;
+    margin: 0 auto;
+  }
+}
 footer {
   background-color: #353535;
   display: -webkit-box;
@@ -258,6 +339,36 @@ footer .list_footer i {
   margin-right: 5px;
 }
 
+@media (min-width: 767.98px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 50px;
+  }
+  footer h2 {
+    margin: 0 20px;
+  }
+  footer .list_footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .list_footer a {
+    margin: 0 10px;
+  }
+  footer .list_footer a p {
+    white-space: nowrap;
+  }
+}
 .basic-button {
   height: 50px;
   border-radius: 25px;
@@ -523,6 +634,40 @@ footer .list_footer i {
   font-weight: 500;
 }
 
+.first-choice {
+  opacity: 0;
+  -webkit-animation: apparaitre 2s;
+          animation: apparaitre 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+}
+
+.second-choice {
+  opacity: 0;
+  -webkit-animation: apparaitre 2s;
+          animation: apparaitre 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+}
+
+.third-choice {
+  opacity: 0;
+  -webkit-animation: apparaitre 2s;
+          animation: apparaitre 2s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transition: ease-out 1s;
+  transition: ease-out 1s;
+}
+
 @-webkit-keyframes move {
   from {
     opacity: 0;
@@ -576,14 +721,6 @@ footer .list_footer i {
   }
   to {
     width: 40%;
-  }
-}
-@-webkit-keyframes apparaitre {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes apparaitre {

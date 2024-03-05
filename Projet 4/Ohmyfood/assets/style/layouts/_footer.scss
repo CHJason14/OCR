@@ -35,3 +35,30 @@ footer {
         }
     }
 }
+
+@media (min-width: 767.98px) {
+        
+    footer {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 50px;
+
+        h2 {
+            margin: 0 20px;
+        }
+
+        .list_footer {
+            flex-direction: row;
+
+            a {
+                margin: 0 10px;
+
+                p {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+}

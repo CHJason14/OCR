@@ -178,6 +178,29 @@
     }
 }
 
+.first-choice {
+    opacity: 0;
+    animation: apparaitre 2s;
+    animation-fill-mode: forwards;
+    transition: ease-out 1s;
+}
+
+.second-choice {
+    opacity: 0;
+    animation: apparaitre 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transition: ease-out 1s;
+}
+
+.third-choice {
+    opacity: 0;
+    animation: apparaitre 2s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    transition: ease-out 1s;
+}
+
 @keyframes move 
 {
     from {
