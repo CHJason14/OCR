@@ -247,3 +247,26 @@
         opacity: 1;
     }
 }
+
+@media (min-width: 767.98px) {
+
+    body {
+        background: white;
+    }
+        
+    .menu-container {
+        max-width: 1055px;
+        align-items: center;
+        margin: 0 auto;
+
+        .title-menu{
+            justify-content: center;
+        }
+        
+        .menu-content {
+            max-width: 634px;
+            width: 100%;
+        }
+    }
+
+}
