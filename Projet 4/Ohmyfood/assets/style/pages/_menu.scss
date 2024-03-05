@@ -178,6 +178,7 @@
     }
 }
 
+/* APPARITION DES MENUS */
 .first-choice {
     opacity: 0;
     animation: apparaitre 2s;
@@ -248,6 +249,7 @@
     }
 }
 
+/* RESPONSIVE */
 @media (min-width: 767.98px) {
 
     body {

@@ -244,6 +244,7 @@ svg:hover {
     opacity: 1;
   }
 }
+/* RESPONSIVE TABLETTE */
 @media (min-width: 767.98px) {
   .instruction .step-container {
     -webkit-box-orient: horizontal;
@@ -274,6 +275,7 @@ svg:hover {
     width: 50%;
   }
 }
+/* RESPONSIVE DESKTOP */
 @media (min-width: 1280px) {
   .instruction h2 {
     max-width: 1265px;
@@ -339,6 +341,7 @@ footer .list_footer i {
   margin-right: 5px;
 }
 
+/* RESPONSIVE */
 @media (min-width: 767.98px) {
   footer {
     -webkit-box-orient: horizontal;
@@ -369,6 +372,7 @@ footer .list_footer i {
     white-space: nowrap;
   }
 }
+/* BOUTON PRINCIPAL */
 .basic-button {
   height: 50px;
   border-radius: 25px;
@@ -395,6 +399,7 @@ footer .list_footer i {
   transition: 1s ease-out;
 }
 
+/* BOUTON NOUVEAU */
 .new-button {
   position: absolute;
   right: 20px;
@@ -411,6 +416,7 @@ footer .list_footer i {
   margin: 15px 0;
 }
 
+/* BOUTON RETOUR */
 .back-button {
   position: absolute;
   top: 13px;
@@ -634,6 +640,7 @@ footer .list_footer i {
   font-weight: 500;
 }
 
+/* APPARITION DES MENUS */
 .first-choice {
   opacity: 0;
   -webkit-animation: apparaitre 2s;
@@ -729,5 +736,27 @@ footer .list_footer i {
   }
   to {
     opacity: 1;
+  }
+}
+/* RESPONSIVE */
+@media (min-width: 767.98px) {
+  body {
+    background: white;
+  }
+  .menu-container {
+    max-width: 1055px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .menu-container .title-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menu-container .menu-content {
+    max-width: 634px;
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */
