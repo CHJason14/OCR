@@ -47,6 +47,8 @@ section {
 }
 
 .restaurant-container {
+    background-color: #F6F6F6;
+
     .restaurants-cards {
         display: flex;
         flex-direction: column;
@@ -75,10 +77,13 @@ section {
                 max-width: 400px;
                 height: 250px;
                 margin-bottom: 18px;
-
-            input {
-                display: none;
+            
+            .card-like {
+                input {
+                    display: none;
+                }
             }
+            
 
                 img {
                     object-fit: cover;

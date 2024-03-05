@@ -122,6 +122,9 @@ section h2 {
   font-size: 16px;
 }
 
+.restaurant-container {
+  background-color: #F6F6F6;
+}
 .restaurant-container .restaurants-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,7 +171,7 @@ section h2 {
   height: 250px;
   margin-bottom: 18px;
 }
-.restaurant-container .restaurants-cards a .card input {
+.restaurant-container .restaurants-cards a .card .card-like input {
   display: none;
 }
 .restaurant-container .restaurants-cards a .card img {
@@ -382,12 +385,10 @@ footer .list_footer i {
   margin: 27px auto;
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
           box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
-}
-.basic-button p {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 500;
-  margin: 13px 18.75px;
+  padding: 13px 18.75px;
 }
 
 .basic-button:hover {
@@ -404,7 +405,7 @@ footer .list_footer i {
   position: absolute;
   right: 20px;
   width: 80px;
-  height: 29px;
+  height: 25px;
   border: none;
   border-radius: 2px;
   background: #99E2D0;
@@ -414,6 +415,7 @@ footer .list_footer i {
   font-weight: 500;
   color: #008766;
   margin: 15px 0;
+  text-align: center;
 }
 
 /* BOUTON RETOUR */
