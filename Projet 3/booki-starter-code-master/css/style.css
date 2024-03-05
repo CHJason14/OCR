@@ -118,7 +118,7 @@ nav button:hover {
         margin: 0;
     }
 
-    button {
+    .submit input {
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         color: white;
@@ -128,7 +128,7 @@ nav button:hover {
         padding: 18px 16px;
     }
 
-    button:hover {
+    .submit input:hover {
         cursor: pointer;
     }
 
@@ -510,29 +510,39 @@ nav button:hover {
         form {
             justify-content: center;
 
-            button {
-                border-radius: 15px;
-                position: relative;
-                left: -15px;
-                padding: 0 20px;
+            /****** Disparition du texte rechercher sur le bouton ***********/
+            .submit input {
+                visibility: hidden;
             }
+
         }
 
-        /****** Disparition du texte rechercher sur le bouton ***********/
-        .text-button span {
-            font-size: 30px;
-            display: inline-block;
-            text-indent: -999em;
-        }
+
 
         /****** Apparition du logo loupe sur le bouton ***********/
-        .text-button:after {
+        .submit:after {
             font-family: "FontAwesome";
             display: block;
             content: "\f002";
             text-indent: 0;
             position: relative;
-            top: -20px;
+            top: -33px;
+        }
+
+        .submit {
+            border-radius: 15px;
+            position: relative;
+            left: -15px;
+            padding: 0 20px;
+            height: 52px;
+            color: white;
+            background-color: #0065FC;
+            border-color: #0065FC;
+            width: 15px;
+        }
+
+        .submit:hover {
+            cursor: pointer;
         }
     }
 
